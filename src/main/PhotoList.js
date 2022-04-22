@@ -1,19 +1,20 @@
 import React from 'react'
 import {images} from "../resources/photoInfo.js"
 import Photo from "./Photo";
+import "./photoList.css"
 
 function PhotoList() {
 
     const photoComponents = images
         .map(image => {
             return(
-                <Photo className="photo" source={image}/>
+                <Photo source={image}/>
             )
         });
 
     // const image = 100;
     
-    return <div>{photoComponents}</div>
+    return <div className="photoList">{photoComponents}</div>
 
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Photo({source}) {
   return (
-    <div>
+    <div className="photo">
         <img src={source}/>
     </div>
   )
